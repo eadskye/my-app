@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+
+
+.App-header {
+  background-image: url("nature.jpg");
+  background-size: cover;
+  height: 300px;
+  padding: 150px;
+  color: white;
+  font-family: "Arial", Verdana, Sans-serif;
+  letter-spacing: 0.3em;
+
+}
+
+.App-intro {
+  background-color: gray;
+  font-size: large;
+  font-family: "Arial", Sans-serif;
+  color: white;
+}
+
+.navbar {
+  font-family: "Arial", Sans-serif;
+}
