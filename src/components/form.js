@@ -48,43 +48,38 @@ class App extends React.Component {
                       type="text" name="name" value = {this.props.myDataProp}
                     onChange={this.handleInputChange} />
                 </label>
-                <label>
-                     Frequency of Contact:
-                  <input
-                      type="text" name="frequency" value = {this.props.myDataProp}
-                    value={this.state.frequencyOfContact}
-                    onChange={this.handleInputChange} />
 
-                </label>
-                <label>
-                     Relationship:
-                  <input
-                      type="text" name="relationship" value = {this.props.myDataProp}
-                    value={this.state.numberOfFamily}
-                    onChange={this.handleInputChange} />
-                </label>
-                <label>
-                     Economic Status:
-                  <input
-                      type="text" name="economic" value = {this.props.myDataProp}
-                    value={this.state.numberOfFamily}
-                    onChange={this.handleInputChange} />
-                </label>
-                <label>
-                     Level of Education:
-                  <input
-                      type="text" name="education" value = {this.props.myDataProp}
-                    value={this.state.numberOfFamily}
-                    onChange={this.handleInputChange} />
-                </label>
-                <label>
-                     What level of self disclosure is currently possible in this relationship?
-                  <input
-                      type="text" name="disclosure" value = {this.props.myDataProp}
-                    value={this.state.numberOfFamily}
-                    onChange={this.handleInputChange} />
-                </label>
+                <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
 
+                Frequency of Contact
+                <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                </button>
+
+                <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                Relationship
+                <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                </button>
+                <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                Economic Status
+                <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                </button>
+                <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+              Level of Education
+                <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                </button>
+                <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+              What level of self disclosure is currently possible in this relationship?
+                <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                </button>
                 <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
 
                 Submit Family Section
@@ -109,48 +104,30 @@ class App extends React.Component {
                       value={this.state.numberOfFamily}
                       onChange={this.handleInputChange} />
                   </label>
-                  <label>
-                       Frequency of Contact:
-                    <input
-                        type="text" name="frequency" value = {this.props.myDataProp}
-                      value={this.state.numberOfFamily}
-                      onChange={this.handleInputChange} />
-                  </label>
-                  <label>
-                       Frequency of Contact:
-                    <input
-                        type="text" name="frequency" value = {this.props.myDataProp}
-                      value={this.state.numberOfFamily}
-                      onChange={this.handleInputChange} />
-                  </label>
-                  <label>
-                       Relationship:
-                    <input
-                        type="text" name="relationship" value = {this.props.myDataProp}
-                      value={this.state.numberOfFamily}
-                      onChange={this.handleInputChange} />
-                  </label>
-                  <label>
-                       Economic Status:
-                    <input
-                        type="text" name="economic" value = {this.props.myDataProp}
-                      value={this.state.numberOfFamily}
-                      onChange={this.handleInputChange} />
-                  </label>
-                  <label>
-                       Level of Education:
-                    <input
-                        type="text" name="education" value = {this.props.myDataProp}
-                      value={this.state.numberOfFamily}
-                      onChange={this.handleInputChange} />
-                  </label>
-                  <label>
-                       What level of self disclosure is currently possible in this relationship?
-                    <input
-                        type="text" name="disclosure" value = {this.props.myDataProp}
-                      value={this.state.numberOfFamily}
-                      onChange={this.handleInputChange} />
-                  </label>
+                  <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                  Frequency of Contact
+                  <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                  </button>
+                  <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                  Economic Status
+                  <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                  </button>
+                  <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                Level of Education
+                  <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                  </button>
+                  <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                What level of self disclosure is currently possible in this relationship?
+                  <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                  </button>
                   <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
 
                   Submit
@@ -166,13 +143,7 @@ class App extends React.Component {
                   </button>
 
                   <form>
-                      <label>
-                        Number:
-                        <input
-                            type="number" name="number" value = {this.props.myDataProp}
-                          value={this.state.numberOfFamily}
-                          onChange={this.handleInputChange} />
-                      </label>
+
                       <label>
                         Name:
                         <input
@@ -180,41 +151,37 @@ class App extends React.Component {
                           value={this.state.numberOfFamily}
                           onChange={this.handleInputChange} />
                       </label>
-                      <label>
-                           Frequency of Contact:
-                        <input
-                            type="text" name="frequency" value = {this.props.myDataProp}
-                          value={this.state.numberOfFamily}
-                          onChange={this.handleInputChange} />
-                      </label>
-                      <label>
-                           Relationship:
-                        <input
-                            type="text" name="relationship" value = {this.props.myDataProp}
-                          value={this.state.numberOfFamily}
-                          onChange={this.handleInputChange} />
-                      </label>
-                      <label>
-                           Economic Status:
-                        <input
-                            type="text" name="economic" value = {this.props.myDataProp}
-                          value={this.state.numberOfFamily}
-                          onChange={this.handleInputChange} />
-                      </label>
-                      <label>
-                           Level of Education:
-                        <input
-                            type="text" name="education" value = {this.props.myDataProp}
-                          value={this.state.numberOfFamily}
-                          onChange={this.handleInputChange} />
-                      </label>
-                      <label>
-                           What level of self disclosure is currently possible in this relationship?
-                        <input
-                            type="text" name="disclosure" value = {this.props.myDataProp}
-                          value={this.state.numberOfFamily}
-                          onChange={this.handleInputChange} />
-                      </label>
+                      <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                      Frequency of Contact
+                      <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                      </button>
+
+                      <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                      Relationship
+                      <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                      </button>
+                      <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                      Economic Status
+                      <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                      </button>
+                      <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                    Level of Education
+                      <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                      </button>
+                      <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                    What level of self disclosure is currently possible in this relationship?
+                      <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                      </button>
                       <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
 
                       Submit Close Friends Section
@@ -229,13 +196,7 @@ class App extends React.Component {
                     <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
                     </button>
                     <form>
-                        <label>
-                          Number:
-                          <input
-                              type="number" name="number" value = {this.props.myDataProp}
-                            value={this.state.numberOfFamily}
-                            onChange={this.handleInputChange} />
-                        </label>
+
                         <label>
                           Name:
                           <input
@@ -243,41 +204,37 @@ class App extends React.Component {
                             value={this.state.numberOfFamily}
                             onChange={this.handleInputChange} />
                         </label>
-                        <label>
-                             Frequency of Contact:
-                          <input
-                              type="text" name="frequency" value = {this.props.myDataProp}
-                            value={this.state.numberOfFamily}
-                            onChange={this.handleInputChange} />
-                        </label>
-                        <label>
-                             Relationship:
-                          <input
-                              type="text" name="relationship" value = {this.props.myDataProp}
-                            value={this.state.numberOfFamily}
-                            onChange={this.handleInputChange} />
-                        </label>
-                        <label>
-                             Economic Status:
-                          <input
-                              type="text" name="economic" value = {this.props.myDataProp}
-                            value={this.state.numberOfFamily}
-                            onChange={this.handleInputChange} />
-                        </label>
-                        <label>
-                             Level of Education:
-                          <input
-                              type="text" name="education" value = {this.props.myDataProp}
-                            value={this.state.numberOfFamily}
-                            onChange={this.handleInputChange} />
-                        </label>
-                        <label>
-                             What level of self disclosure is currently possible in this relationship?
-                          <input
-                              type="text" name="disclosure" value = {this.props.myDataProp}
-                            value={this.state.numberOfFamily}
-                            onChange={this.handleInputChange} />
-                        </label>
+                        <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                        Frequency of Contact
+                        <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                        </button>
+
+                        <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                        Relationship
+                        <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                        </button>
+                        <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                        Economic Status
+                        <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                        </button>
+                        <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                      Level of Education
+                        <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                        </button>
+                        <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                      What level of self disclosure is currently possible in this relationship?
+                        <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                        </button>
                         <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
 
                         Submit Friends/Aquainctances Section
@@ -292,13 +249,7 @@ class App extends React.Component {
                       <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
                       </button>
                       <form>
-                          <label>
-                            Number:
-                            <input
-                                type="number" name="number" value = {this.props.myDataProp}
-                              value={this.state.numberOfFamily}
-                              onChange={this.handleInputChange} />
-                          </label>
+
                           <label>
                             Name:
                             <input
@@ -306,41 +257,37 @@ class App extends React.Component {
                               value={this.state.numberOfFamily}
                               onChange={this.handleInputChange} />
                           </label>
-                          <label>
-                               Frequency of Contact:
-                            <input
-                                type="text" name="frequency" value = {this.props.myDataProp}
-                              value={this.state.numberOfFamily}
-                              onChange={this.handleInputChange} />
-                          </label>
-                          <label>
-                               Relationship:
-                            <input
-                                type="text" name="relationship" value = {this.props.myDataProp}
-                              value={this.state.numberOfFamily}
-                              onChange={this.handleInputChange} />
-                          </label>
-                          <label>
-                               Economic Status:
-                            <input
-                                type="text" name="economic" value = {this.props.myDataProp}
-                              value={this.state.numberOfFamily}
-                              onChange={this.handleInputChange} />
-                          </label>
-                          <label>
-                               Level of Education:
-                            <input
-                                type="text" name="education" value = {this.props.myDataProp}
-                              value={this.state.numberOfFamily}
-                              onChange={this.handleInputChange} />
-                          </label>
-                          <label>
-                               What level of self disclosure is currently possible in this relationship?
-                            <input
-                                type="text" name="disclosure" value = {this.props.myDataProp}
-                              value={this.state.numberOfFamily}
-                              onChange={this.handleInputChange} />
-                          </label>
+                          <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                          Frequency of Contact
+                          <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                          </button>
+
+                          <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                          Relationship
+                          <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                          </button>
+                          <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                          Economic Status
+                          <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                          </button>
+                          <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                        Level of Education
+                          <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                          </button>
+                          <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                        What level of self disclosure is currently possible in this relationship?
+                          <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                          </button>
                           <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
 
                           Submit Work/Colleagues
@@ -354,13 +301,7 @@ class App extends React.Component {
                             <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
                             </button>
                           <form>
-                              <label>
-                                Number:
-                                <input
-                                    type="number" name="number" value = {this.props.myDataProp}
-                                  value={this.state.numberOfFamily}
-                                  onChange={this.handleInputChange} />
-                              </label>
+
                               <label>
                                 Name:
                                 <input
@@ -368,41 +309,37 @@ class App extends React.Component {
                                   value={this.state.numberOfFamily}
                                   onChange={this.handleInputChange} />
                               </label>
-                              <label>
-                                   Frequency of Contact:
-                                <input
-                                    type="text" name="frequency" value = {this.props.myDataProp}
-                                  value={this.state.numberOfFamily}
-                                  onChange={this.handleInputChange} />
-                              </label>
-                              <label>
-                                   Relationship:
-                                <input
-                                    type="text" name="relationship" value = {this.props.myDataProp}
-                                  value={this.state.numberOfFamily}
-                                  onChange={this.handleInputChange} />
-                              </label>
-                              <label>
-                                   Economic Status:
-                                <input
-                                    type="text" name="economic" value = {this.props.myDataProp}
-                                  value={this.state.numberOfFamily}
-                                  onChange={this.handleInputChange} />
-                              </label>
-                              <label>
-                                   Level of Education:
-                                <input
-                                    type="text" name="education" value = {this.props.myDataProp}
-                                  value={this.state.numberOfFamily}
-                                  onChange={this.handleInputChange} />
-                              </label>
-                              <label>
-                                   What level of self disclosure is currently possible in this relationship?
-                                <input
-                                    type="text" name="disclosure" value = {this.props.myDataProp}
-                                  value={this.state.numberOfFamily}
-                                  onChange={this.handleInputChange} />
-                              </label>
+                              <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                              Frequency of Contact
+                              <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                              </button>
+
+                              <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                              Relationship
+                              <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                              </button>
+                              <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                              Economic Status
+                              <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                              </button>
+                              <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                            Level of Education
+                              <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                              </button>
+                              <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                            What level of self disclosure is currently possible in this relationship?
+                              <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                              </button>
                               <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
 
                             Submit Professional Section
@@ -416,13 +353,7 @@ class App extends React.Component {
                             <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
                             </button>
                             <form>
-                                <label>
-                                  Number:
-                                  <input
-                                      type="number" name="number" value = {this.props.myDataProp}
-                                    value={this.state.numberOfFamily}
-                                    onChange={this.handleInputChange} />
-                                </label>
+
                                 <label>
                                   Name:
                                   <input
@@ -430,41 +361,37 @@ class App extends React.Component {
                                     value={this.state.numberOfFamily}
                                     onChange={this.handleInputChange} />
                                 </label>
-                                <label>
-                                     Frequency of Contact:
-                                  <input
-                                      type="text" name="frequency" value = {this.props.myDataProp}
-                                    value={this.state.numberOfFamily}
-                                    onChange={this.handleInputChange} />
-                                </label>
-                                <label>
-                                     Relationship:
-                                  <input
-                                      type="text" name="relationship" value = {this.props.myDataProp}
-                                    value={this.state.numberOfFamily}
-                                    onChange={this.handleInputChange} />
-                                </label>
-                                <label>
-                                     Economic Status:
-                                  <input
-                                      type="text" name="economic" value = {this.props.myDataProp}
-                                    value={this.state.numberOfFamily}
-                                    onChange={this.handleInputChange} />
-                                </label>
-                                <label>
-                                     Level of Education:
-                                  <input
-                                      type="text" name="education" value = {this.props.myDataProp}
-                                    value={this.state.numberOfFamily}
-                                    onChange={this.handleInputChange} />
-                                </label>
-                                <label>
-                                     What level of self disclosure is currently possible in this relationship?
-                                  <input
-                                      type="text" name="disclosure" value = {this.props.myDataProp}
-                                    value={this.state.numberOfFamily}
-                                    onChange={this.handleInputChange} />
-                                </label>
+                                <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                                Frequency of Contact
+                                <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                                </button>
+
+                                <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                                Relationship
+                                <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                                </button>
+                                <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                                Economic Status
+                                <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                                </button>
+                                <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                              Level of Education
+                                <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                                </button>
+                                <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                              What level of self disclosure is currently possible in this relationship?
+                                <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
+                                </button>
                                 <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
 
                                 Submit Other Section
@@ -472,6 +399,14 @@ class App extends React.Component {
                                 </button>
 
                               </form>
+
+
+                              <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+
+                              Submit Assessment
+                              <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+                              </button>
+
 
 
 
