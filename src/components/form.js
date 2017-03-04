@@ -27,6 +27,13 @@ class App extends React.Component {
 
 
    render() {
+     var visible;
+     if(this.state.dropOpen){
+       visible= "visible";
+     } else {
+       visible= "hidden";
+     }
+
       return (
 
          <div>
@@ -34,6 +41,7 @@ class App extends React.Component {
         <p>Please select the people in your life who you are in contact with daily, weekly, and monthly over the last six months. If there are any irregularities in contact over the last six months, choose the predominant pattern of contact (e.g., choose weekly contact if you usually talk to this person on the phone almost once a week but you were in Europe for a month so you missed those weeks). Please do not include anyone who you are in contact with less than once a month. The method of contact used for the purposes of building your social map can only include in-person meet-ups and/or phone calls.</p>
 
             <h3>Family</h3>
+
             <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
 
             Add Family Member
@@ -48,13 +56,19 @@ class App extends React.Component {
                       type="text" name="name" value = {this.props.myDataProp}
                     onChange={this.handleInputChange} />
                 </label>
+                    <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" id="frequencydrop">
+                    Frequency of Contact
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li>Daily</li>
+                    <li>Weekly</li>
+                    <li>Monthly</li>
 
-                <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+                  </ul>
+                </div>
 
-                Frequency of Contact
-                <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
-
-                </button>
 
                 <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
 
@@ -151,12 +165,14 @@ class App extends React.Component {
                           value={this.state.numberOfFamily}
                           onChange={this.handleInputChange} />
                       </label>
-                      <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+                      <div className= "dropdown">
+                      <button onClick= {this.props.whenClicked} className= {"btn btn-default dropdown-toggle"}>
 
                       Frequency of Contact
                       <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
-
+                      <span className="caret"></span>
                       </button>
+                      </div>
 
                       <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
 
