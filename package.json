@@ -8,10 +8,12 @@
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
     "react-router": "^2.0.0-rc5",
-    "redux-promise": "^0.5.3"
+    "redux-promise": "^0.5.3",
+    "webpack": "^2.2.1"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
+    "babel-plugin-recharts": "^1.1.0",
     "babel-preset-env": "^1.1.11",
     "concurrently": "^3.4.0",
     "react-scripts": "0.9.3"

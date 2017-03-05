@@ -1,31 +1,31 @@
-import React, { Component } from 'react';
-import { Form, Text } from 'react-form';
+import React from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div style={style.container}>
-        <span style={style.header}>
-        React Simple start
-        {this.props.children}
-        </span>
-      </div>
-    );
+
+import {Routes, browserHistory } from 'react-router';
+
+
+
+var landingContainer = React.createClass({
+
+
+
+
+
+render: function(){
+
+
+  return(
+
+
+            <img width={1425} height={500} src="nature.jpg"/>
+
+
+
+
+
+
+  );
   }
-}
+});
 
-const style = {
-  container: {
-    display: 'flex',
-    alignItems: 'center',
-    width: '100vw',
-    backgroundColor: 'black',
-  },
-  header: {
-    width: '100%',
-    maxWidth: '540px',
-  }
-
-};
-
-export default App;
+export default landingContainer;
