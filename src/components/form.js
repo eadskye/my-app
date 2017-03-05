@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class App extends React.Component {
 
    constructor(props) {
@@ -42,15 +43,13 @@ class App extends React.Component {
 
             <h3>Family</h3>
 
-            <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
-
-
-
+            <div className= "family">
+            <button onClick= {this.props.whenClicked} className= {"btn btn-default"}>
 
             Add Family Member
-            <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
-            </button>
 
+            </button>
+            </div>
             <form>
 
                 <label>
@@ -343,12 +342,13 @@ class App extends React.Component {
 
 
                   <h3>Close Friends</h3>
-                  <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+                  <div className= "closeFriends">
+                  <button onClick= {this.props.whenClicked} className= {"btn btn-default"}>
 
                   Add Close Friends
-                  <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
-                  </button>
 
+                  </button>
+                  </div>
                   <form>
 
                       <label>
@@ -482,11 +482,13 @@ class App extends React.Component {
 
 
                     <h3>Friends/Aquaintances</h3>
-                    <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+                    <div className= "family">
+                    <button onClick= {this.props.whenClicked} className= {"btn btn-default"}>
 
                     Add Friends/Aquaintances
-                    <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
                     </button>
+                    </div>
                     <form>
 
                         <label>
@@ -616,11 +618,13 @@ class App extends React.Component {
 
 
                       <h3>Work/Colleagues</h3>
-                      <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+                      <div className= "family">
+                      <button onClick= {this.props.whenClicked} className= {"btn btn-default"}>
 
                       Add Work/Colleagues
-                      <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
                       </button>
+                      </div>
                       <form>
 
                           <label>
@@ -765,11 +769,13 @@ class App extends React.Component {
 
 
                           <h3>Professional (example: therapist, doctor, mentor, coach, teacher):</h3>
-                            <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+                          <div className= "family">
+                          <button onClick= {this.props.whenClicked} className= {"btn btn-default"}>
 
-                            Add Professional
-                            <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
-                            </button>
+                          Add Professional
+
+                          </button>
+                          </div>
                           <form>
 
                               <label>
@@ -913,11 +919,13 @@ class App extends React.Component {
                               </div>
                             </form>
                             <h3>Other:</h3>
-                            <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+                            <div className= "family">
+                            <button onClick= {this.props.whenClicked} className= {"btn btn-default"}>
 
                             Add Other
-                            <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+
                             </button>
+                            </div>
                             <form>
 
                                 <label>
@@ -1074,13 +1082,13 @@ class App extends React.Component {
                               </div>
 
 
-                              <button onClick= {this.props.whenClicked} className= {"btn " + this.props.className} type="button">
+                              <div className= "SubmitAssessment">
+                              <button onClick= {this.props.whenClicked} className= {"btn btn-default"}>
 
-                              Submit Assessment
-                              <span className= {this.props.subTitleClassName}>{this.props.subTitle}</span>
+                              Make My Social Map
+
                               </button>
-
-
+                              </div>
 
 
 
